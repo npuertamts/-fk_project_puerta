@@ -15,6 +15,7 @@
     ],
     "data": [ 
         "vistas/test_view.xml",
+        "vistas/disponibilidad.xml",
     ],
     "installable": True,
     "application": False,
