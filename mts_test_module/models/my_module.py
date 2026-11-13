@@ -2,6 +2,6 @@ from odoo import models, fields, api
 
 
 class my_modul(models.Model):
-    _name = "Contact"
+    _inherit = "res.partner"
 
-    company_name = fields.Text()
+    company_name = fields.Char(string="Nombre Comercial empresa")
