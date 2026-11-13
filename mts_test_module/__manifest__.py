@@ -4,7 +4,7 @@
     "description": """
         it does nothing
     """,
-    "version": "0.0.1.0.0",
+    "version": "19.0.1.0.0",
     "author": "MTS",
     "website": "https://www.madetosoft.com",
     "license": "LGPL-3",
