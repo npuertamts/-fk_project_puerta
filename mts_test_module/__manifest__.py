@@ -11,8 +11,11 @@
     "category": "Custom",
     "depends": [
     "base",
+    "contacts"
     ],
-    "data": [ ],
+    "data": [ 
+        "vistas/test_view.xml",
+    ],
     "installable": True,
     "application": False,
 }

@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit.mi_modulo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <!-- 1. Ocultar el campo Sitio web -->
+            <xpath expr="//field[@name='website']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+
+            <!-- 2. Mover Teléfono dentro de la pestaña Notas -->
+            <xpath expr="//page[@name='internal_notes']" position="inside">
+                <xpath expr="//field[@name='phone']" position="move"/>
+            </xpath>
+
+            <!-- 3. Añadir una pestaña nueva con el nombre del contacto -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Datos del contacto">
+                    <field name="name"/>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
