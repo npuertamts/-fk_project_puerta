@@ -19,7 +19,7 @@
                 </page>
             </xpath>
 
-            <xpath expr="//notebook" position="inside">
+            <xpath expr="//field[@name='website']" position="after">
                 <field name="company_name"/>
                 <field name="company_date"/>
                 <field name="company_fac"/>
