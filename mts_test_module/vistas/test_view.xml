@@ -20,9 +20,9 @@
             </xpath>
 
             <xpath expr="//group[@name='other_info']" position="inside">
-                <field name="Company Name"/>
+                <field name="company_name"/>
             </xpath>
-            
+
         </field>
     </record>
 </odoo>
