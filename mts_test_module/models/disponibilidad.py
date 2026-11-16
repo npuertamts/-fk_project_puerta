@@ -7,7 +7,6 @@ class disponibilidad(models.Model):
 
     client_id = fields.Many2one(
         "res.partner",
-        string="Partners"
     )   
 
 
