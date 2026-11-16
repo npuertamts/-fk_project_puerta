@@ -29,8 +29,8 @@
                 <field name="horario_ids">
                     <list>
                         <field name="day"/>
-                        <field name="from_hour"/>
-                        <field name="to_hour"/>
+                        <field name="from_hour" widget="float_time"/>
+                        <field name="to_hour" widget="float_time"/>
                     </list>
                 </field>
             </xpath>
