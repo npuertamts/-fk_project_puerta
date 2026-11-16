@@ -27,8 +27,10 @@
 
             <xpath expr="//field[@name='website']" position="after">
                 <field name="horario_ids">
-                    <field name="from_hour"/>
-                    <filed name="to_hour"/>
+                    <list>
+                        <field name="from_hour"/>
+                        <filed name="to_hour"/>
+                    <list/>
                 </field>
             </xpath>
         </field>
