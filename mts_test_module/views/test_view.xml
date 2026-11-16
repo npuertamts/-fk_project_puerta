@@ -28,8 +28,9 @@
             <xpath expr="//field[@name='website']" position="after">
                 <field name="horario_ids">
                     <list>
-                        <field name="from_hour"/>
-                        <field name="to_hour"/>
+                        <field name="day"7/>
+                        <field name="from_hour" widget="float_time"/>
+                        <field name="to_hour" widget="float_time"/>
                     </list>
                 </field>
             </xpath>
