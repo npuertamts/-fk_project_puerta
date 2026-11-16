@@ -25,8 +25,9 @@
                 <field name="company_fac"/>
             </xpath>
 
-            <xpath expr="//field[@name='website']" position="after">
-                <form>
+            <xpath expr="//notebook" position="inside">
+                <page string="Horarios">
+
                     <field name="horario_ids">
                         <list>
                             <field name="day"/>
@@ -34,7 +35,8 @@
                             <field name="to_hour" widget="float_time"/>
                         </list>
                     </field>
-                </form> 
+
+                </page> 
             </xpath>
         </field>
     </record>
