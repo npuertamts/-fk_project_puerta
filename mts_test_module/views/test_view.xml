@@ -30,11 +30,9 @@
 
                     <field name="horario_ids">
                         <list>
-                            <group>
-                                <field name="day"/>
-                                <field name="from_hour" widget="float_time"/>
-                                <field name="to_hour" widget="float_time"/>
-                            </group>
+                            <field name="day"/>
+                            <field name="from_hour" widget="float_time"/>
+                            <field name="to_hour" widget="float_time"/>
                         </list>
 
                         <form>
