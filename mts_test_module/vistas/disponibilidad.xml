@@ -1,5 +1,0 @@
-<odoo>
-    <record id="view_mts_disponibilidad" model="ir.ui.view">
-        <field name="client_id">
-    </record>
-</odoo>

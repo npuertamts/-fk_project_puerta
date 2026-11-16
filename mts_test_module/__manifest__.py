@@ -14,8 +14,8 @@
     "contacts"
     ],
     "data": [ 
-        "vistas/test_view.xml",
-        "vistas/disponibilidad.xml",
+        "views/test_view.xml",
+        "views/disponibilidad.xml",
     ],
     "installable": True,
     "application": False,
