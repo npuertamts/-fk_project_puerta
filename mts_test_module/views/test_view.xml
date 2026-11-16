@@ -25,6 +25,9 @@
                 <field name="company_fac"/>
             </xpath>
 
+            <xpath expr="//field[@name='website']" position="after">
+                <field name="client_id"/>
+            </xpath>
         </field>
     </record>
 </odoo>

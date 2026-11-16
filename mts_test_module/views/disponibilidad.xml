@@ -1,7 +1,0 @@
-<odoo>
-    <record id"mts_disponibilidad_action" model="ir.actions.act_window">
-        <field name="name">Test action</field>
-        <field name="res_model">mts.horarios</field>
-        <field name="view_mode">list,form</field>
-    </record>
-</odoo> 

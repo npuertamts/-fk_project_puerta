@@ -15,7 +15,6 @@
     ],
     "data": [ 
         "views/test_view.xml",
-        "views/disponibilidad.xml",
     ],
     "installable": True,
     "application": False,
