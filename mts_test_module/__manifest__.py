@@ -14,6 +14,7 @@
     "contacts"
     ],
     "data": [ 
+        "security/disponibilidad_access.csv"
         "views/test_view.xml",
     ],
     "installable": True,
