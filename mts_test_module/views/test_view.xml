@@ -29,7 +29,7 @@
                 <field name="horario_ids">
                     <list>
                         <field name="from_hour"/>
-                        <filed name="to_hour"/>
+                        <field name="to_hour"/>
                     </list>
                 </field>
             </xpath>
