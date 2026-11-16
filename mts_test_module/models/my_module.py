@@ -7,3 +7,9 @@ class my_modul(models.Model):
     company_name = fields.Char(string="Nombre Comercial empresa")
     company_date = fields.Date(string="Fecha Creación empresa")
     company_fac = fields.Float(string="Facturación empresa")
+
+    horario_ids = fields.One2many(
+        "mts.horarios",
+        "client_id",
+        string="horarios"
+    )   
