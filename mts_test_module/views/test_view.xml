@@ -30,7 +30,7 @@
                     <list>
                         <field name="from_hour"/>
                         <filed name="to_hour"/>
-                    <list/>
+                    </list>
                 </field>
             </xpath>
         </field>
