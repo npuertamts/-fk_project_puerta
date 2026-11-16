@@ -26,7 +26,10 @@
             </xpath>
 
             <xpath expr="//field[@name='website']" position="after">
-                <field name="horario_ids"/>
+                <field name="horario_ids">
+                    <field name="from_hour"/>
+                    <filed name="to_hour"/>
+                </field>
             </xpath>
         </field>
     </record>
