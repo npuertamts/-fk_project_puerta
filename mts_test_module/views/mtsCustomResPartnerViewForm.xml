@@ -23,7 +23,7 @@
                 <group>
                     <field name="commercial_company_name"/>
                     <field name="company_date"/>
-                    <field name="x_company_facturation"/>
+                    <field name="x_company_facturation" widget="monetary"/>
                 </group> 
             </xpath>
 
