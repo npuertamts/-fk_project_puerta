@@ -24,14 +24,15 @@ class MTSHorarios(models.Model):
         "res.partner",
     )
 
-    _sql_constraints = [
-        ('invalid_schedule', 'CHECK(from_hour < to_hour)', 'From_hour can\'t be larger or equal to To_hour.'),
-    ]
+    #_check_schedule = models.Constraint(
+    #    'CHECK(from_hour < to_hour)',
+    #    'From_hour can\'t be larger or equal to To_hour.'
+    #)
 
-    #@api.constrains("from_hour", "to_hour")
-    #def _check_schedule(self):
-    #    for record in self:
-    #        if float_compare(record.from_hour, record.to_hour, precision_digit=6)  >= 0:
-    #            return ValidationError("From_hour can't be larger or equal to To_hour")
+    @api.constrains("from_hour", "to_hour")
+    def _check_schedule(self):
+        for record in self:
+            if float_compare(record.from_hour, record.to_hour, precision_digit=6)  >= 0:
+                return ValidationError("From_hour can't be larger or equal to To_hour")
 
 
