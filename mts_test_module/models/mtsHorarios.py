@@ -1,4 +1,5 @@
 from odoo import fields, models
+from odoo.tools.float_utils import *
 
 class MTSHorarios(models.Model):
     _name = "mts.horarios"
@@ -21,6 +22,17 @@ class MTSHorarios(models.Model):
 
     client_id = fields.Many2one(
         "res.partner",
-    )   
+    )
+
+    _check_schedule = models.Constraint(
+        'CHECK(from_hour < to_hour)',
+        'From_hour can\'t be larger or equal to To_hour.',
+    )
+
+    #@api.constrains("from_hour", "to_hour")
+    #def _check_schedule(self):
+    #    for record in self:
+    #        if float_compare(record.from_hour, record.to_hour, precision_digit=6)  >= 0:
+    #            return ValidationError("From_hour can't be larger or equal to To_hour")
 
 
