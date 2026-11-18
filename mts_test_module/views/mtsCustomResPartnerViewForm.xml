@@ -23,12 +23,12 @@
                 <group invisible="not is_company">
                     <field name="commercial_company_name"/>
                     <field name="company_date"/>
-                    <field name="x_company_facturation" widget="monetary"/>
+                    <field name="x_company_facturation" widget="monetary" invisible="customer_rank <= 0"/>
                 </group> 
             </xpath>
 
             <xpath expr="//notebook" position="inside">
-                <page string="Horarios">
+                <page string="Horarios" invisible="customer_rank <= 0">
                     <field name="horario_ids">
                         <list edit="True" delete="True" editable="bottom">
                             <field name="day"/>
