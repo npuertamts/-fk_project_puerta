@@ -20,9 +20,11 @@
             </xpath>
 
             <xpath expr="//div[@class='mb8']" position="after">
-                <field name="commercial_company_name"/>
-                <field name="company_date"/>
-                <field name="x_company_facturation"/>
+                <group>
+                    <field name="commercial_company_name"/>
+                    <field name="company_date"/>
+                    <field name="x_company_facturation"/>
+                </group> 
             </xpath>
 
             <xpath expr="//notebook" position="inside">
