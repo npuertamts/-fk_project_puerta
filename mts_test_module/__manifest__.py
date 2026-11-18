@@ -10,8 +10,9 @@
     "license": "LGPL-3",
     "category": "Custom",
     "depends": [
-    "base",
-    "contacts"
+        "base",
+        "contacts",
+        "account"
     ],
     "data": [ 
         "security/ir.model.access.csv",
