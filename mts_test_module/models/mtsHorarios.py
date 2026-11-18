@@ -24,10 +24,9 @@ class MTSHorarios(models.Model):
         "res.partner",
     )
 
-    _check_schedule = models.Constraint(
-        'CHECK(from_hour < to_hour)',
-        'From_hour can\'t be larger or equal to To_hour.',
-    )
+    _sql_constraints = [
+        ('invalid_schedule', 'CHECK(from_hour < to_hour)', 'From_hour can\'t be larger or equal to To_hour.'),
+    ]
 
     #@api.constrains("from_hour", "to_hour")
     #def _check_schedule(self):
