@@ -1,5 +1,6 @@
 from odoo import fields, models
-from odoo.tools.float_utils import *
+from odoo.tools.float_utils import float_compare
+from odoo.exceptions import ValidationError
 
 class MTSHorarios(models.Model):
     _name = "mts.horarios"
@@ -29,7 +30,7 @@ class MTSHorarios(models.Model):
     #    'From_hour can\'t be larger or equal to To_hour.'
     #)
 
-    @api.constrains("from_hour", "to_hour")
+    @api.constrains("from_hour")
     def _check_schedule(self):
         for record in self:
             if float_compare(record.from_hour, record.to_hour, precision_digit=6)  >= 0:
