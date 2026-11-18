@@ -13,7 +13,8 @@ class MTSHorarios(models.Model):
                    ("5", "Sabado"),
                    ("6", "Domingo")
                    ],
-        required=True
+        required=True,
+        default="0",
     )
     from_hour = fields.Float(string="Desde", required=True)
     to_hour = fields.Float(string="Hasta", required=True)
