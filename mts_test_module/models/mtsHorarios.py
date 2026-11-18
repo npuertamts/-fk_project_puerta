@@ -1,6 +1,6 @@
 from odoo import fields, models
 
-class disponibilidad(models.Model):
+class MTSHorarios(models.Model):
     _name = "mts.horarios"
     day = fields.Selection(
         string="Day",

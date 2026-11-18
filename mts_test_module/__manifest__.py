@@ -15,9 +15,7 @@
     ],
     "data": [ 
         "security/ir.model.access.csv",
-        "views/custom_partner_view.xml",
-        "views/crm_view_partner.xml",
-        "views/custom_views.xml"
+        "views/mtsCustomResPartnerViewForm.xml"
     ],
     "installable": True,
     "application": False,
