@@ -19,7 +19,7 @@
                 </page>
             </xpath>
 
-            <xpath expr="//field[@name='name']" position="after">
+            <xpath expr="//div[@class='mb8']" position="after">
                 <field name="commercial_company_name"/>
                 <field name="company_date"/>
                 <field name="x_company_facturation"/>
